@@ -1,0 +1,51 @@
+<!-- 1.getElementById
+
+The getElementById method returns an element whose id matches a passed string. -->
+
+<!-- 2.getElementsByTagName
+
+The getElementsByTagName method returns the HTMLCollection of elements that match the passed tag name.
+
+3.getElementsByClassName
+
+The getElementsByClassName method returns an HTMLCollection of elements that match the passed class name.
+
+4.getElementsByName
+
+The getElementsByName method returns the elements that match the value of the name attribute with the passed string. The return value is a live NodeList Collection.
+
+5.querySelector
+
+The querySelector method returns the first element that matches the passed selector.
+
+6.querySelectorAll
+
+The querySelectorAll method is an extension of the querySelector method. This method returns all the elements that match the passed selector. -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p class="demo">This is for getElementsByClassName method</p>
+<p class="demo1">This is for queryselector method</p>
+
+<p id="task">Finding HTML Elements by Id</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="task1"></p>
+
+<script>
+const element = document.getElementById("task");
+const element2 = document.getElementsByTagName("p");
+const x = document.getElementsByClassName("demo");
+const y = document.querySelectorAll("p.demo1");
+
+document.getElementById("task1").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
+</script>
+
+</body>
+</html>
